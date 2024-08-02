@@ -1,0 +1,289 @@
+:root {
+    --primaryColor : rgb(0, 158, 197) ;
+    --secondColor : rgb(228, 148, 148) ;
+    --lightmode : #FBF3D5 ;
+    --darkmode  : rgb(87, 59, 59) ;
+    --bgColor : rgb(26, 21, 21) ;
+    --bgColor1 :  rgba(197, 197, 197, 0.274) ;
+    --bgColor2 : rgb(163, 159, 159) ;
+    --Gradiant :background: rgb(48,47,48);
+    
+}
+@font-face {
+    font-family: Calina;
+    src: url(../Fonts/Calina.otf);
+}
+@font-face {
+    font-family: Grashrock;
+    src: url(../Fonts/Grashrock.otf);
+}
+@font-face {
+    font-family: Vostela;
+    src: url(../Fonts/VOSTELA.otf);
+}
+@font-face {
+    font-family: waltograph;
+    src: url(../Fonts/waltograph42.ttf);
+}
+@font-face {
+    font-family: Opeen sans;
+    src: url(../Fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Casselen;
+    src: url(../Fonts/Casselin\ DEMO\ VERSION.ttf);
+}
+
+/* -----------------------------------------------------------------------
+------------------------ GENERAL SETTING ---------------------------------
+------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica , sans-serif , 'Calina' ;
+    font-size: 16px ;
+    color: black ;
+}
+body {
+    background-image: url(../Image/pexels-balamurugan-anbazhagan-763097.jpg) ;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Calina' ,'Times New Roman', Times, serif;
+    font-size: 25px ;
+    cursor: grab  ;
+}
+h2{
+    color: black ;
+    font-family: 'Opeen sans' , 'Times New Roman', Times, serif;
+    font-size: large ;
+    margin-bottom: 40px;
+
+}
+h3 {
+    font-family: 'Opeen sans' , Arial, Helvetica, sans-serif;
+    font-size: large ;
+    color: black;
+    padding: 10px;
+
+}
+i {
+    color: black ;
+    margin: 0px 10px ;
+    font-size: large;
+}
+p {
+    color: #e0e0e0 ;
+}
+
+
+
+
+/* -----------------------------------------------------------------------
+------------------------ NAVIGATION HOME SETTING -------------------------
+------------------------------------------------------------------------*/
+
+.home {
+    width: 100% ;
+    height: 100vh ;
+    background-image: linear-gradient(to bottom right , rgba(255, 255, 255, 0.274) , transparent );
+    background-size: cover  ;
+    display: flex;
+    flex-direction: column ;
+}
+
+span {
+    font-family: Calina , sans-serif;
+    color: var(--lightmode);
+}
+nav {
+    padding : 1rem  2rem ;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+
+.subBtn { 
+    color: var(--lightmode);
+    font-weight: 600 ;
+    font-size: 1.2rem;
+    /*background-color: var(--lightmode);*/
+    padding: 5px 7px ;
+    border: solid 2px transparent;
+    border-radius: 30px ;
+    text-decoration: none ;
+}
+
+.subBtn:hover {
+    background-color: rgba(211, 211, 211, 0.233);
+    transition: 1s;
+    border-radius: 30px ;
+}
+
+.explore {
+    color: var(--lightmode);
+    font-weight: 600 ;
+    font-size: 1.2rem;
+    padding: 5px 7px ;
+    text-decoration: none ;
+    border-radius: 30px ;
+}
+
+.explore:hover{
+    background-color: rgba(211, 211, 211, 0.233);
+    transition: 1s;
+    border-radius: 30px ;
+}
+/*.navigation {
+    height: 300px ;
+   
+}*/
+.navig {
+    width: 100% ;
+    height: 100vh;
+    background-color: white ;
+    display: block ;
+    text-align: center ;
+    justify-content: center ;
+    padding: 0% ; 
+}
+.navbarr ul li {
+    
+    list-style-type: none;
+    display: inline-block;
+    margin : 1.5rem  1rem; 
+
+}
+.navbarr {
+    padding: 1% ;
+}
+
+.navbarr ul li a {
+    color: var(--lightmode);
+    font-weight: 400;
+    text-decoration: none ;
+    text-transform: capitalize;
+    border-radius: 15px ;
+    padding : 5px 10px ;
+    font-family: 'Opeen sans' , sans-serif ;
+    font-size: 1.1rem ;
+    font-weight: 400;
+}
+
+.navbarr ul li a:hover {
+    background-color: rgba(235, 229, 229, 0.274) ;
+    transition: 0.5s ;
+}
+.card {
+    background: rgba(255, 255, 255, 0.05) ;
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    border-radius: 10px;
+    width: 38%;
+    height: auto;
+    max-height: 460px ;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: solid 0.1px white;
+    box-shadow: 0 0px 80px rgba(255, 255, 255, 0.1);
+}
+.card:hover {
+    scale: 1.02 ;
+    box-shadow: 0 0 20px black ;
+    border: none ;
+    backdrop-filter: none ;
+    transition: 1s ;
+}
+.card h2 {
+    font-weight: bolder ;
+    font-size: 1.7rem ;
+    font-family: Arial, Helvetica, sans-serif ;
+
+}
+
+.login-form {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--lightmode);
+}
+
+input[type="email"],
+input[type="password"] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400 ;
+    text-align: center ;
+    width: 70%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 0px solid #ccc ;
+    opacity: 0.5;
+    background-color: #fff;
+    font-weight: 500;
+
+}
+input[type="email"]:hover ,
+input[type="password"]:hover {
+    border-color: var(--bgColor);
+    opacity: 0.9 ;
+    
+    
+
+}
+
+.submit-btn {
+    background-color: var(--primaryColor);
+    color: var(--lightmode);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.submit-btn:hover {
+    background-color: white ;
+    color: black;
+}
+
+.card h3 {
+    font-family: Calibri , sans-serif;
+    font-weight: 300;
+    color: white ;
+}
+.card h3 a {
+    text-decoration: none ;
+    color: rgb(45, 196, 223) ;
+}
+.card h3 a:hover {
+    scale: 1.1 ;
+    transform: scaleY(2px) ;
+}
+
+/* -----------------------------------------------------------------------
+------------------------ NAVIGATION HOME SETTING -------------------------
+------------------------------------------------------------------------*/
+
+.error {
+    color : rgb(255, 255, 255) ;
+    font-family : arial , Calibri  ;
+    font-size : 15px ;
+    font-weight: 600 ;
+    padding: 3% ;
+}
+p span {
+    padding: 2px ;
+}

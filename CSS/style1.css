@@ -1,0 +1,407 @@
+:root {
+    --primaryColor : rgb(31, 116, 226) ;
+    --secondColor : rgb(228, 148, 148) ;
+    --lightmode : #ffffff ;
+    --darkmode  : rgb(87, 59, 59) ;
+    --bgColor : rgb(26, 21, 21) ;
+    --bgColor1 :  rgba(197, 197, 197, 0.274) ;
+    --bgColor2 : rgb(163, 159, 159) ;
+}
+@font-face {
+    font-family: Calina;
+    src: url(../Fonts/Calina.otf);
+}
+@font-face {
+    font-family: Grashrock;
+    src: url(../Fonts/Grashrock.otf);
+}
+@font-face {
+    font-family: Vostela;
+    src: url(../Fonts/VOSTELA.otf);
+}
+@font-face {
+    font-family: waltograph;
+    src: url(../Fonts/waltograph42.ttf);
+}
+@font-face {
+    font-family: Opeen sans;
+    src: url(../Fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Casselen;
+    src: url(../Fonts/Casselin\ DEMO\ VERSION.ttf);
+}
+
+
+/* -----------------------------------------------------------------------
+------------------------ GENERAL SETTING ---------------------------------
+------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica , sans-serif , 'Calina' ;
+    font-size: 16px ;
+    color: black ;
+}
+
+h1 {
+    font-family: 'Calina' , 'Times New Roman', Times, serif;
+    font-size: 25px ;
+    cursor: grab  ;
+}
+h2{
+    color: black ;
+    font-family: 'Opeen sans' , 'Times New Roman', Times, serif;
+    font-size: large ;
+    margin-bottom: 20px;
+
+}
+h3 {
+    font-family: 'Opeen sans' , Arial, Helvetica, sans-serif;
+    font-size: large ;
+    color: black;
+    padding: 10px;
+
+}
+i {
+    color: black ;
+    margin: 0px 13px ;
+    font-size: large;
+}
+p {
+    color: #ffffff ;
+}
+
+/* -----------------------------------------------------------------------
+------------------------ NAVIGATION HOME SETTING -------------------------
+------------------------------------------------------------------------*/
+
+.home {
+    width: 100% ;
+    height: 60vh ;
+    background : url("../Image/pexels-balamurugan-anbazhagan-763097.jpg") ;
+    background-size: cover  ;
+    display: flex;
+    flex-direction: column ;
+}
+.navigation {
+    background-image: linear-gradient(to bottom , rgba(255, 255, 255, 0.788) , transparent );
+
+}
+button a {
+    text-decoration: none ;
+}
+
+span {
+    font-family: Calina , sans-serif;
+    color: var(--lightmode);
+}
+nav {
+    padding : 2rem 5% 5% 5% ;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+
+.subBtn { 
+    color: var(--lightmode);
+    font-weight: 500 ;
+    font-size: 1.2rem;
+    /*background-color: var(--lightmode);*/
+    padding: 5px 7px ;
+    border: solid 2px transparent;
+    border-radius: 30px ;
+    text-decoration: none ;
+}
+
+.subBtn:hover {
+    background-color: rgba(211, 211, 211, 0.233);
+    transition: 1s;
+    border-radius: 30px ;
+}
+
+.explore {
+    color: var(--lightmode);
+    font-weight: 500 ;
+    font-size: 1.2rem;
+    padding: 5px 7px ;
+    text-decoration: none ;
+    border-radius: 30px ;
+}
+
+.explore:hover{
+    background-color: rgba(211, 211, 211, 0.233);
+    transition: 1s;
+    border-radius: 30px ;
+}
+/* -----------------------------------------------------------------------
+------------------------ NAVIGATION MEDUIM  ----------------------------
+------------------------------------------------------------------------*/
+
+.navig {
+    width: 100% ;
+    height: 120vh;
+    background-color: white ;
+    display: block ;
+    text-align: center ;
+    justify-content: center ;
+    padding: 0% ; 
+}
+.navig ul li {
+    
+    list-style-type: none;
+    display: inline-block;
+    margin : 1.5rem  1rem; 
+
+}
+.navbarr {
+    padding: 2% ;
+    margin-bottom: 50px ;
+}
+
+.navig ul li a {
+    color: var(--darkmode);
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: var(--bgColor1) ;
+    border-radius: 15px ;
+    padding : 5px 10px ;
+    font-family: 'Opeen sans' , sans-serif ;
+    font-size: 1.1rem ;
+    font-weight: 400;
+
+}
+
+.navig ul li a:hover {
+    background-color: rgba(235, 229, 229, 0.274) ;
+    transition: 0.5s ;
+}
+
+
+.card {
+    width: 100% ;
+    display: flex ;
+    justify-content: space-around ;
+    color: black ;
+}
+
+.card .card1,.card2,.card3 {
+    width: 25% ;
+    border-radius: 10px ;
+    background: transparent ;
+    
+    box-shadow:  16px 16px 25px #929292,
+                -16px -16px 25px #ffffff;
+    padding: 12px ;
+    
+}
+
+
+button {
+    
+    font-family: 'Opeen sans' , Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px ;
+    background: black ;
+  }
+  
+  .button_top {
+    font-family:  Arial, Helvetica, sans-serif;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 20px ;
+    padding: 0.75em 1.5em ;
+    background: white ;
+    color: black ;
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_top {
+    transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+    transform: translateY(0);
+  }
+
+  /* -----------------------------------------------------------------------
+------------------------ SECTION POURQUOI   ----------------------------
+------------------------------------------------------------------------*/
+
+.actualite {
+    width: 100% ;
+    height: 40vh ;
+    background-color: rgb(255, 255, 255) ;
+    margin-top: 30px ;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: 400 ;
+    padding: 40px 10px ;
+}
+.actualite h1{
+    font-family: serif , Arial, Helvetica, sans-serif  ;
+    font-size: 2.5rem;
+    margin: 5px ;
+    padding: 2% ;
+    /*background-color : linear-gradient( to top , transparent ,  rgba(128, 128, 128, 0.082) );*/
+    border-radius: 0px ;
+    
+}
+
+ /* -----------------------------------------------------------------------
+------------------------ IMG GALLERIE POURQUOI   ----------------------------
+------------------------------------------------------------------------*/
+.contain {
+    background-color: rgba(128, 128, 128, 0.082) ;
+    border-radius:  0 10 0 20 ;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.205) ;
+    display: flex ;
+    justify-content: space-between ;
+
+}
+.slider {
+    width: 50% ;
+    
+}
+img {
+    max-width: 200%;
+}
+.slider-container {
+    border-radius: 20px ;
+    background-color: rgb(255, 255, 255) ;
+    width: auto ;
+    position: relative;
+    margin: 20px;
+    height: 500px ;
+    overflow: hidden;
+}
+.comments {
+    width: 50% ;
+    height: 500px ;
+    background-color: rgba(133, 131, 131, 0.082) ;
+    border-radius: 5px  30px ;
+    margin: 20px;
+}
+.comments h2 {
+    font-family: serif ;
+    padding: 2% ;
+    font-size: 1.7rem ;
+    font-weight: 600 ;
+    /*text-shadow: 0 0 0px black ;*/
+}
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 0.5em;
+}
+.menu label:hover,.menu label:focus {
+    background: #1c87c9;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+border-radius: 20px 20px 0 0 ;
+    width: 100% ;
+    height: 92%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+.comments p {
+    text-align: start ;
+    padding: 8px ;
+    font-family: serif , Arial, Helvetica, sans-serif ;
+    font-size: 16px ;
+    color: rgb(184, 23, 23);
+}
+
+/*----------------------------------------------------------------------------
+-------------------------------         
+
+         ---------------------------------
+----------------------------------------------------------------------------- */
+.footer {
+    width: 100% ;
+    background-color: rgba(0, 0, 0, 0.055) ;
+    color: #00000034;
+    padding: 20px ;
+    display: block ;
+    text-align: center ;
+    justify-content: space-between;
+}
+.footer footer {
+    background-color: transparent ;
+}
+.contact-info, .social-media {
+    flex: 1;
+}
+
+.contact-info h2, .social-media h2 {
+    font-size: 1.2em;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif ;
+
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #000000;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+.about p {
+    color: #000000 ;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media ul li:last-child {
+    margin-right: 0;
+}
+
+.social-media ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.footer h1{
+    font-family: serif , Arial, Helvetica, sans-serif  ;
+    font-size: 2.5rem;
+    margin: 0px ;
+    padding: 2% ;
+    /*background-color : linear-gradient( to top , transparent ,  rgba(128, 128, 128, 0.082) );*/
+    border-radius: 0px ;
+    
+}

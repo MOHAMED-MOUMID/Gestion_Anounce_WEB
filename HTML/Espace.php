@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content ="Anounce Etablissement , Ensa AGADIR , Gestion Anounce Ensa AGadir , Platforme des anounces " >  
+    <title>Espace_Anounce</title>
+    <link rel="icon" href="/Icons/login_icon_184224.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Creepster&family=La+Belle+Aurore&family=MedievalSharp&family=Orbitron&family=Rye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/style1.css">
+</head>
+<body>
+    <section class="home">
+        <div class="navigation">
+            <nav>
+                <h1>Academia <span>CONNECT</span></h1>
+                <div>
+                    <a href="#" class="explore"><i class="fa-solid fa-caret-up"></i>Explorer</a>
+                    <a href="#" class="subBtn"><i class="fa-solid fa-right-to-bracket"></i>Se Connecter</a>
+                </div>         
+            </nav>
+        </div>
+        <div class="bgimg">
+        </div>
+    </section>
+    <section class="navig">
+        <div class="navbarr">
+            <ul>
+                <li><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#home"><i class="fa-solid fa-newspaper"></i></i>actualite</a></li>
+                <li><a href="#home"><i class="fa-solid fa-bullhorn"></i>Anouncement</a></li>
+                <li><a href="#home"><i class="fa-solid fa-address-book"></i>Contact</a></li>
+                <li><a href="#home"><i class="fa-sharp fa-solid fa-eject"></i>About</a></li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="card1">
+                <img src="../Image/student_9810509.png" alt="">
+                <h2>Etudiant</h2>
+                <a href="login3.php" id="stud">
+                    <button>
+                        <span class="button_top">Se Connecter</span>
+                    </button>
+                </a>     
+            </div>
+            <div class="card2">
+                <img src="../Image/user-with-tie-glasses_74266.png" alt="">
+                <h2>Professeur/Chef de filière</h2>
+                <a href="login2.php" id="Prof">
+                    <button>
+                        <span class="button_top" >Se Connecter</span>
+                    </button>
+                </a> 
+            </div>
+            <div class="card3">
+                <img src="../Image/personal-configuration_30422.png" alt="">
+                <h2>Administration</h2>
+                <a href="login1.php" id="Adm">
+                    <button>
+                        <span class="button_top">Se Connecter</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="actualite">
+            <h1> Actualités </h1>
+            <div class="contain">
+                <div class="comments">
+                    <h2>Commentaire sur L actualites</h2>
+                    <p><strong> Cher Professeur Okhouya, <br>
+
+                     Félicitations pour l'obtention de votre doctorat ! C'est une réussite exceptionnelle qui témoigne de votre dévouement et de votre excellence académique. Votre passion pour la recherche et votre engagement envers l'apprentissage inspirent profondément vos étudiants. Nous sommes privilégiés de vous avoir comme guide et mentor dans notre parcours académique. <br>
+                      Votre réussite est une source d'inspiration pour nous tous. <br>
+
+                     Félicitations encore une fois !</strong></p>
+                </div>
+                <div class="slider">
+                    <div class="slider-container">
+                        <div class="menu">
+                            <label for="slide-dot-1"></label>
+                            <label for="slide-dot-2"></label>
+                            <label for="slide-dot-3"></label>
+                        </div>
+            
+                        <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+                        <img class="slide-img" src="../Image/img1.jpg">
+            
+                        <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+                        <img class="slide-img" src="../Image/img3.jpg">
+            
+                        <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+                        <img class="slide-img" src="../Image/img2.jpg">
+            
+                    </div>
+                </div>
+               
+            </div>
+            
+        </div>
+    </section>
+   <?php include 'Footer.php' ; ?>
+</body>
+</html>
